@@ -1,0 +1,40 @@
+name: grafpix
+description: A huge icon sets from many providers and utilities are ready for you to use in your flutter projects and more.
+version: 1.2.2
+author: Ahmed Mustafa<ahmed.dev2020@gmail.com>
+homepage: https://github.com/grafpix/
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  fonts:
+    - family: CaptainIcons 
+      fonts:
+        - asset: lib/fonts/captainicon.ttf
+          weight: 400
+    - family: GrafpixIcons
+      fonts:
+        - asset: lib/fonts/grafpix.ttf
+          weight: 400
+    - family: TypIcons
+      fonts:
+        - asset: lib/fonts/typIcons.ttf
+          weight: 400
+    - family: FontAwsomeBrands
+      fonts:
+        - asset: lib/fonts/fa_brands.ttf
+          weight: 400
+    - family: FontAwsomeSolid
+      fonts:
+        - asset: lib/fonts/fa_solid.ttf
+          weight: 400
