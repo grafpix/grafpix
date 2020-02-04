@@ -1,3 +1,9 @@
+# [1.2.4] - 2020-2-4
+
+* `NEW!` Adding `PixButton`.
+* Updating Example.
+* Updating Readme.me.
+
 ## [1.2.2] - 2020-1-17
 
 * `NEW!` Adding `WYSIWYG Previewer Module`.
