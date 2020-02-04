@@ -1,48 +1,50 @@
 # Grafpix
 
-Grafpix `Flutter` **Icon Package** and **Utilities**, is a growing collection of high ranked icons from multiple authors ready to be used in your flutter projects. Grafpix also loaded with essential utilities that help you creating a good user experience. 
+A growing `Flutter Package` consist of a huge collection of rectified **icons** and **essential utilities** that grant you outstanding user experience in no time.
 
-## Getting Started
+## Features
 
-Icons are one of the most useful UI tools available on the web for mobile applications, and when a collection of great icons and utilities are available for you with ease of use, it is even better.
+- Up-to-date huge collection of ***icons*** from multiple authors.
+- Impressive growing ***utilities*** to imporove your design patterns.
+- **`WYSIWYG` preview** module for `Flutter` in `Visual Studio Code` to speed up development by providing you with **`Visual Aid`**.
+- Ease to deploy.
 
-## Features!
-  - Top ranked icons from multiple `authors` to grant you the best UI experience for your mobile application users.
-  - A growing collection of icons and utilities managed from one single package. 
-  - Hassle free, saves your time & efforts.
-  - Using one single line of code, you are ready to go.
+### `>Newly Added` PixButtons
+
+A Stunning **`Glass-Like Buttons`** with **fully** customized properties.
+
+![Release](https://grafpix.com/release/1.2.4/showcase.jpg)
+
+![Showcase](https://grafpix.com/release/1.2.4/release.jpg)
 
 ### A huge iconset of `+2500` Icons
-  - 1403 Icons from [FontAwsome 5.12](https://fontawesome.com/).
-  - 336 Icons from [Stephen Hutchings](https://www.s-ings.com/).
-  - 467 Icons from [CaptainIcon](https://mariodelvalle.github.io/CaptainIconWeb/).
-  - 491 standard clean pix icons.
 
-#### Whats New!
-  - **`NEW`** -> **WYSIWYG Previewer Module** for `Flutter` in `Visual Studio Code`, this will provide you with **`Visual Aid`** letting you make selections while coding without wasting your time for match mappings and round trips between your device /emulator and IDE.  
-  
+- 1403 Icons from [FontAwsome 5.12](https://fontawesome.com/).
+- 336 Icons from [Stephen Hutchings](https://www.s-ings.com/).
+- 467 Icons from [CaptainIcon](https://mariodelvalle.github.io/CaptainIconWeb/).
+- 491 Clean pix icons.
 
-|  Widget   |                 WYSIWYG Previewer Module                  |
-| --------- | --------------------------------------------------------- |
-| PixIcon   | ![PixIcon](https://grafpix.com/api/readme.php?rm=pixicon)   |
-| PixLoader | ![PixLoader](https://grafpix.com/api/readme.php?rm=pixloader) |
+[![Grafpix Release 1.2.4](https://grafpix.com/release/1.2.4/youtube2.jpg)](https://www.youtube.com/watch?v=JGzcL0ahyHo)
 
+### PixLoaders
 
-  - **`NEW`** -> 3 animated `PixLoader` used to simulate *Future* progress indications.
+used to simulate *Future* progress indicators.
 
-  |     LoaderType      |                               Output                                |
-  | ------------------- | ------------------------------------------------------------------- |
-  | LoaderType.Flashing | ![Flashing](https://grafpix.com/api/pixloaders.php?loader=flashing) |
-  | LoaderType.Spinner  | ![Spinner](https://grafpix.com/api/pixloaders.php?loader=spinner)   |
-  | LoaderType.Rocks    | ![Rocks](https://grafpix.com/api/pixloaders.php?loader=rocks)       |
-
+| LoaderType |                               Output                                |
+| ---------- | ------------------------------------------------------------------- |
+| Flashing   | ![Flashing](https://grafpix.com/api/pixloaders.php?loader=flashing) |
+| Spinner    | ![Spinner](https://grafpix.com/api/pixloaders.php?loader=spinner)   |
+| Rocks      | ![Rocks](https://grafpix.com/api/pixloaders.php?loader=rocks)       |
 
 ### Installation
+
 In your `pubspec.yaml` under `dependencies` add the following line:
+
 ```yaml
 dependencies:
-  grafpix: ^1.2.2
+  grafpix: ^1.2.4
 ```
+
 From your `Terminal`, run the following code:
 
 ```sh
@@ -50,35 +52,44 @@ From your `Terminal`, run the following code:
 ```
 
 ### Example
+
 PixIcon and PixLoader example
+
 ```dart
-import 'package:grafpix/pixloaders/pix_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:grafpix/icons.dart';
+import 'package:grafpix/pixloaders/pix_loader.dart';
+import 'package:grafpix/pixbuttons/radial.dart';
 
 class Example extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[600],
       body: FutureBuilder(
           future: waitForFuture(),
           builder: (context, snapshot) {
             if (snapshot.hasData)
+              // display PixButton with PixIcon when Future ends.
               return Container(
                 alignment: Alignment.center,
-                child: IconButton(
-                    // display PixIcon when Future ends.
-                    icon: Icon(PixIcon.pix_android,
-                        size: 30.0, color: Colors.green[600]),
-                    onPressed: () {
+                child: PixButton(
+                    radius: 70.0,
+                    icon: PixIcon.pix_android, //PixIcon
+                    iconSize: 50.0,
+                    iconColor: Colors.white,
+                    backgroundColor: Colors.blue,
+                    shutter: 0.6,
+                    twinkles: true,
+                    onPress: () {
                       print('Icon Pressed');
                     }),
               );
             else
               // display PixLoader while Future in progress.
               return PixLoader(
-                  loaderType: LoaderType.Spinner,
-                  faceColor: Colors.pinkAccent[400]);            
+                  loaderType: LoaderType.Flashing,
+                  faceColor: Colors.white70);
           }),
     );
   }
@@ -92,10 +103,13 @@ Future waitForFuture() async {
 ```
 
 [![GRAFPIX](https://grafpix.com/api/readme.php?rm=logo)](http://grafpix.com)
+
 #### Author
+
 > Ahmed Mustafa < ahmed.dev2020@gmail.com >
 > if you have suggestions, please feel free to contact me any time.
 > your feedback is highly appreciated.
 
 ### License
+
 MIT
