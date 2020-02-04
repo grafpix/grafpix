@@ -1,8 +1,8 @@
 name: grafpix
-description: A huge icon sets from many providers and utilities are ready for you to use in your flutter projects and more.
-version: 1.2.2
+description: Huge collection of icons and gadgets utilized and ready for flutter projects.
+version: 1.2.4
 author: Ahmed Mustafa<ahmed.dev2020@gmail.com>
-homepage: https://github.com/grafpix/
+homepage: https://github.com/grafpix/grafpix
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
