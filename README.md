@@ -5,7 +5,7 @@ A growing `Flutter Package` consist of a huge collection of rectified **icons** 
 ## Features
 
 - Up-to-date huge collection of ***icons*** from multiple authors.
-- Impressive growing ***utilities*** to imporove your design patterns.
+- Impressive growing ***utilities*** to improve your design patterns.
 - **`WYSIWYG` preview** module for `Flutter` in `Visual Studio Code` to speed up development by providing you with **`Visual Aid`**.
 - Ease to deploy.
 
@@ -42,7 +42,7 @@ In your `pubspec.yaml` under `dependencies` add the following line:
 
 ```yaml
 dependencies:
-  grafpix: ^1.2.4
+  grafpix: ^1.2.5
 ```
 
 From your `Terminal`, run the following code:
