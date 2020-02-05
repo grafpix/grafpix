@@ -1,4 +1,9 @@
-# [1.2.4] - 2020-2-4
+# [1.2.5] - 2020-2-5
+
+* Fixes `typicon` font issue.
+* Updating Readme.me.
+
+## [1.2.4] - 2020-2-4
 
 * `NEW!` Adding `PixButton`.
 * Updating Example.
