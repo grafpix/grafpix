@@ -28,7 +28,7 @@ flutter:
           weight: 400
     - family: TypIcons
       fonts:
-        - asset: lib/fonts/typIcons.ttf
+        - asset: lib/fonts/typicons.ttf
           weight: 400
     - family: FontAwsomeBrands
       fonts:
